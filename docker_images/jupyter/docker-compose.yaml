@@ -1,0 +1,9 @@
+version: '1'
+services:
+  jupyter:
+    image: jupyter-server-min:latest
+    ports:
+      - "8888:8888"
+    volumes:
+      - /home/isawicki/Developer/custom_images/jupyter/nbs:/home/jovyan/nbs:rw
+      - /home/isawicki/Developer/training_images:/home/jovyan/traing_images:rw
